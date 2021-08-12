@@ -15,7 +15,10 @@ if($resultado){
     $_SESSION['username']=$num_empleado;
     header('Location: ../dashboard.php');
 }else{
-    header('Location: ../login.php');
+    
+    echo "<script>
+    alert('Contraseña o usuario incorrecto, verifique!');
+    window.location= '../login.php';
+    </script>";
 }
-
 ?>
