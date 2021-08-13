@@ -308,17 +308,16 @@ $dr= ($vac-$dt);
                                     </tbody>
                                 </table>
                             </div>
+                            <form actio="" >
+                            <input type="submit" class="btn btn-success" value="Solicitar Vacación">
+                            </form>
                         </div>
-                                                                   
-                            
-                            </div>
-                            
-                        </div>
+                                                        
                     </div>
                     <!-- Tarjeta de solicitud -->
                     <div class="container-fluid" width="100%">
                     <!--solicitud de vacaciones  -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-4" style="display:none";>
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">solicitud</h6>
                         </div>
