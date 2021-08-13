@@ -250,25 +250,12 @@ $dr= ($vac-$dt);
                     <!-- tarjeta de informacion-->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Informacion</h6>
                         </div>
                         <div class="card-body">
                         
                             <div class="information"  >
-                                <table class="table  table-striped table-bordered">
-                                    <tr>
-                                        <td><h4>Nombre</h4></td>
-                                        <td><h5>Telefono</h5></td>
-                                        <td><h5>Correo electrónico</h5></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php  echo " <h4> $name </h4>" ?></td>
-                                        <td><?php echo "<h5>$tel</h5>" ?></td>
-                                        <td><?php echo "<h5>$email</h5>" ?></td>
-                                    </tr>
-                                    
-                                </table>
-                                <br>
+                                
                                 <table class="table  table-striped table-bordered">
                                     <tr>
                                         <td><h5>Fecha de ingreso</h5></td>
@@ -283,13 +270,71 @@ $dr= ($vac-$dt);
                                         <td><?php echo "<h5>$dr</h5>" ?></td>
                                     </tr>
                                     
-                                </table>                                                     
+                                </table>    
+                                
+                                <br>
+
+                                <div class="container">
+                            <center><h1>Historial de solicitudes </h1></center>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Num. Solicitud</th>
+                                            <th>Fecha de solicitud</th>
+                                            <th>Fecha de vacacion</th>
+                                            <th>Status</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Num. Solicitud</th>
+                                            <th>Fecha de solicitud</th>
+                                            <th>Fecha de vacacion</th>
+                                            <th>Status</th>
+                                            
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1115</td>
+                                            <td>dd/mm/aaaa</td>
+                                            <td>dd/mm/aaaa</td>
+                                            <td>disfrutada</td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                                                                    
                             
                             </div>
                             
                         </div>
                     </div>
+                    <!-- Tarjeta de solicitud -->
+                    <div class="container-fluid" width="100%">
+                    <!--solicitud de vacaciones  -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">solicitud</h6>
+                        </div>
+                        <div class="card-body">
+                            <center>
+                            <h1>¿Cuantos días desea de vacaciones?</h1>
+                            <form id="sol_vac" action="#">
+                                <br>
+                                <input type="text" placeholder="Ingrese numero de dias...">
+                                <br><br>
+                                <input type="submit" class="btn btn-success" value="confirmar">
+                            </form>
+                            </center>
+                        </div>
+                    </div>
+                </div>
                     <!-- tarjeta de mi equipo-->
                     <div class="card shadow mb-4 " style="display: none">
                         <div class="card-header py-3">
